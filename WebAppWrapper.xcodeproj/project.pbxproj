@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		223566832D3C91B2009C5469 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223566822D3C91B2009C5469 /* Launch Screen.storyboard */; };
+		223566852D3C91CB009C5469 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 223566842D3C91CB009C5469 /* README.md */; };
+		2235668A2D3C9534009C5469 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 223566892D3C9534009C5469 /* FirebaseAnalytics */; };
+		224DE7292D3CA1C9000FE09B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 224DE7282D3CA1C9000FE09B /* FirebaseCore */; };
+		224DE72B2D3CA1CD000FE09B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 224DE72A2D3CA1CD000FE09B /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		223566632D3C90E3009C5469 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +35,36 @@
 		223566522D3C90E2009C5469 /* WebAppWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAppWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223566622D3C90E3009C5469 /* WebAppWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAppWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2235666C2D3C90E3009C5469 /* WebAppWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAppWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		223566822D3C91B2009C5469 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		223566842D3C91CB009C5469 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		224DE7342D3CC582000FE09B /* Exceptions for "WebAppWrapper" folder in "WebAppWrapper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 223566512D3C90E2009C5469 /* WebAppWrapper */;
+		};
+		224DE73A2D3D396A000FE09B /* Exceptions for "demo" folder in "WebAppWrapper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				demo1.png,
+				demo2.png,
+				demo3.png,
+				demo4.png,
+			);
+			target = 223566512D3C90E2009C5469 /* WebAppWrapper */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		223566542D3C90E2009C5469 /* WebAppWrapper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				224DE7342D3CC582000FE09B /* Exceptions for "WebAppWrapper" folder in "WebAppWrapper" target */,
+			);
 			path = WebAppWrapper;
 			sourceTree = "<group>";
 		};
@@ -45,6 +78,14 @@
 			path = WebAppWrapperUITests;
 			sourceTree = "<group>";
 		};
+		224DE7352D3D393F000FE09B /* demo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				224DE73A2D3D396A000FE09B /* Exceptions for "demo" folder in "WebAppWrapper" target */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224DE72B2D3CA1CD000FE09B /* FirebaseMessaging in Frameworks */,
+				224DE7292D3CA1C9000FE09B /* FirebaseCore in Frameworks */,
+				2235668A2D3C9534009C5469 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +119,13 @@
 		223566492D3C90E2009C5469 = {
 			isa = PBXGroup;
 			children = (
+				224DE7352D3D393F000FE09B /* demo */,
+				223566822D3C91B2009C5469 /* Launch Screen.storyboard */,
+				223566842D3C91CB009C5469 /* README.md */,
 				223566542D3C90E2009C5469 /* WebAppWrapper */,
 				223566652D3C90E3009C5469 /* WebAppWrapperTests */,
 				2235666F2D3C90E3009C5469 /* WebAppWrapperUITests */,
+				224DE7272D3CA1C9000FE09B /* Frameworks */,
 				223566532D3C90E2009C5469 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +138,13 @@
 				2235666C2D3C90E3009C5469 /* WebAppWrapperUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		224DE7272D3CA1C9000FE09B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +164,13 @@
 			);
 			fileSystemSynchronizedGroups = (
 				223566542D3C90E2009C5469 /* WebAppWrapper */,
+				224DE7352D3D393F000FE09B /* demo */,
 			);
 			name = WebAppWrapper;
 			packageProductDependencies = (
+				223566892D3C9534009C5469 /* FirebaseAnalytics */,
+				224DE7282D3CA1C9000FE09B /* FirebaseCore */,
+				224DE72A2D3CA1CD000FE09B /* FirebaseMessaging */,
 			);
 			productName = WebAppWrapper;
 			productReference = 223566522D3C90E2009C5469 /* WebAppWrapper.app */;
@@ -195,6 +254,9 @@
 			);
 			mainGroup = 223566492D3C90E2009C5469;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				223566882D3C9534009C5469 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 223566532D3C90E2009C5469 /* Products */;
 			projectDirPath = "";
@@ -212,6 +274,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223566832D3C91B2009C5469 /* Launch Screen.storyboard in Resources */,
+				223566852D3C91CB009C5469 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,11 +463,16 @@
 				DEVELOPMENT_TEAM = R455PNH33V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebAppWrapper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WebApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +497,16 @@
 				DEVELOPMENT_TEAM = R455PNH33V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebAppWrapper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WebApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +632,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		223566882D3C9534009C5469 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		223566892D3C9534009C5469 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 223566882D3C9534009C5469 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		224DE7282D3CA1C9000FE09B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 223566882D3C9534009C5469 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		224DE72A2D3CA1CD000FE09B /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 223566882D3C9534009C5469 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2235664A2D3C90E2009C5469 /* Project object */;
 }
